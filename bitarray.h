@@ -48,11 +48,11 @@ public:
 private:
     unsigned long* data;
     int num_bits;
-    int capacity; // in bits
+    int capacity; 
 
     void allocate(int bits);
     void deallocate();
-    int words_needed(int bits) const;
+    int get_words_needed(int bits) const;
 
     friend bool operator==(const BitArray& a, const BitArray& b);
     friend bool operator!=(const BitArray& a, const BitArray& b);
